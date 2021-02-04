@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div class="sidebar flex-row">
+		<div class="tableofcontents" style="flex: auto;">
+			<div style="text-align: center;">MỤC LỤC</div>
+			<div>
+				<a href="#section-1">
+					1. Tìm hiểu chung về công nghệ in 3D
+				</a>
+				<div class="tab-left">
+					<div>
+						<a href="#subsection-1-1">
+							1.1. Giới thiệu về công nghệ in 3D
+						</a>
+					</div>
+					<div>
+						<a href="#subsection-1-2">
+							1.2. Lịch sử phát triển
+						</a>
+					</div>
+					<div>
+						<a href="#subsection-1-3">
+							1.3. Một số thuật ngữ và quy tắc chung
+						</a>
+					</div>
+					<div>
+						<a href="#subsection-1-4">
+							1.4. Một số công nghệ in 3D hiện nay
+						</a>
+					</div>
+				</div>
+			</div>
+			<div>
+				<a href="#section-2">
+					2. Vai trò, ứng dụng trong lĩnh vực y tế
+				</a>
+				<div class="tab-left">
+					<div>
+						<a href="#subsection-2-1">
+							2.1. Công nghệ in sinh học 3D
+						</a>
+					</div>
+					<div>
+						<a href="#subsection-2-2">
+							2.2. Vai trò trong y sinh
+						</a>
+					</div>
+					<div>
+						<a href="#subsection-2-3">
+							2.3. Ứng dụng trong lĩnh vực y tế
+						</a>
+					</div>
+				</div>
+			</div>
+			<div>
+				<a href="#summary">
+					Nhận xét và kết luận
+				</a>
+			</div>
+			<div>
+				<a href="#refer">
+					Tham khảo
+				</a>
+			</div>
+			<div>
+				<a href="#document">
+					Tài liệu
+				</a>
+			</div>
+		</div>
+		<div class="vline"></div>
+	</div>
+	<div class="main">
+		<div class="contents">
+			<div>
+				<div class="centering bold">TRƯỜNG ĐẠI HỌC BÁCH KHOA - ĐẠI HỌC QUỐC GIA</div>
+				<div class="centering bold">THÀNH PHỐ HỒ CHÍ MINH</div>
+				<div class="centering">Khoa Khoa học và kĩ thuật máy tính</div>
+				<div class="centering">
+					<img src="image/logobk.png" style="width: 5cm; height: 5cm; padding: 72pt; object-fit: contain;">
+				</div>
+				<div class="centering bold">BÁO CÁO BÀI TẬP LỚN NHẬP MÔN ĐIỆN TOÁN</div>
+				<div class="hline"></div>
+				<div class="tab-left">
+					<div>Đề tài: Công nghệ in 3D và ứng dụng của công nghệ in 3D trong lĩnh vực y tế</div>
+					<div>Nhóm: Ba Chấm Năm</div>
+					<div class="tab-left">
+						<table class="list">
+							<tr>
+								<td>&#9679;</td>
+								<td>Hà Vĩnh Nguyên - 2011698</td>
+							</tr>
+							<tr>
+								<td>&#9679;</td>
+								<td>Lê Anh Thi - 2012482</td>
+							</tr>
+							<tr>
+								<td>&#9679;</td>
+								<td>Phạm Đức Thắng - 2012080</td>
+							</tr>
+							<tr>
+								<td>&#9679;</td>
+								<td>Lê Minh Chiến - 2010961</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="hline"></div>
+				<div class="centering" style="padding-top: 100pt;">Thành phố Hồ Chí Minh, ngày 2 tháng 2 năm 2021</div>
+			</div>
+			<div class="hline" style="border-width: 5px;"></div>
+			<div>
+				<h1 id="section-1">1. Tìm hiểu chung về công nghệ in 3D</h1>
+				<div>
+					<h3 id="subsection-1-1">1.1. Giới thiệu về công nghệ in 3D</h3>
+					<div class="tab-left" style="text-indent: 20px;">
+						<div>
+							"Công nghệ in 3D" hay còn gọi là "Công nghệ bồi đắp vật liệu" là một chuỗi các công đoạn khác nhau được kết hợp để tạo nên một vật thể ba chiều. Trong in 3D, các lớp vật liệu được đắp chồng lên nhau và được định dạng dưới sự kiểm soát của máy tính để tạo ra vật thể. Các đối tượng này có thể có hình dạng bất kỳ, và được tạo ra từ một mô hình 3D hoặc các nguồn dữ liệu điện tử khác nhau.
+						</div>
+						<div class="centering">
+							<img class="import-img" src="image/3d printer.jpg" >
+							<div class="import-img-caption">Hình 1.1: Một máy in 3D của MakerBot Industries</div>
+						</div>
+						<div class="centering">
+							<img class="import-img" src="image/3d products.jpg" >
+							<div class="import-img-caption">Hình 1.2: Một số sản phẩm in 3D</div>
+						</div>
+					</div>
+					<h3 id="subsection-1-2">1.2. Lịch sử phát triển của công nghệ in 3D</h3>
+					<div class="tab-left" style="text-indent: 20px;">
+						<div>
+							Vào những năm 1980, kĩ thuật in 3D chỉ được coi là công nghệ tạo mẫu nhanh (rapid prototyping<sup><a id="doc-1" href="#doc-1-source">[1]</a></sup>) vì các quy trình ban đầu được hình thành như là một phương pháp nhanh chóng và hiệu quả về chi phí để tạo nguyên mẫu để phát triển sản phẩm trong ngành. Người xin cấp bằng sáng chế đầu tiên cho công nghệ RP này là Dr. Kodama, người Nhật Bản, vào tháng 5 năm 1980. Thật không may cho Dr. Kodama, tài liệu sáng chế đầy đủ của ông lại không được nộp đúng thời hạn 1 năm sau khi nộp đơn, điều tệ hại hơn là người duyệt đơn cho ông lại là 1 luật sư sáng chế. Cho nên, nguồn gốc của in ấn 3D được cho là bắt nguồn từ năm 1986, khi bằng sáng chế đầu tiên được cấp cho thiết bị tạo khối (SLA). Bằng sáng chế này thuộc về Charles (Chuck) Hull, người đầu tiên đã phát minh ra máy SLA vào năm 1983. Hull cũng là người đồng sáng lập Tổng Công ty Hệ thống 3D - một trong những tổ chức lớn nhất và giàu có nhất hoạt động trong ngành in 3D hiện nay.
+						</div>
+						<div class="centering">
+							<img class="import-img" src="image/Chuck Hull.jpg" >
+							<div class="import-img-caption">Hình 1.1: Một máy in 3D của MakerBot Industries</div>
+						</div>
+						<div>
+							Trong những năm gần đây, ngành công nghiệp in 3D bắt đầu có dấu hiệu đa dạng hóa với hai lĩnh vực trọng tâm cụ thể được xác định rõ ràng hơn. Thứ nhất, đã có sản phẩm cao cấp của in ấn 3D, tuy vẫn còn là một hệ thống rất đắt đỏ và chỉ được hướng tới sản xuất cho các ngành đòi hỏi giá trị lớn, thiết kế quy mô lớn, phức tạp như ngành hàng không, ô tô, y tế và đồ trang sức, vì việc áp dụng công nghệ in 3D cho những ngành này đã có nhiều năm nghiên cứu và phát triển để trở nên phong phú hơn. Thứ hai, một số nhà sản xuất hệ thống in ấn 3D đã và đang phát triển "máy in mô hình khái niệm”. Cụ thể, đây là những máy in 3D giữ trọng tâm vào việc cải thiện phát triển khái niệm và chức năng tạo mẫu, được phát triển đặc biệt như là công cụ thân thiện với người dùng và tiết kiệm chi phí.
+						</div>
+						<div>
+							Theo báo cáo “Wohlers Report 2017” của công ty Wohlers Associates - công ty lớn nhất về tư vấn kỹ thuật và chiến lược trong lĩnh vực in 3D - thống kê từ khi xuất hiện công nghệ in 3D, tốc độ tăng trưởng kép hàng năm của các sản phẩm và dịch vụ in 3D trên toàn thế giới là 25,9%. Chỉ trong 4 năm gần đây, con số đó đã tăng lên tới 28%. Giai đoạn 2010-2017, quy mô thị trường in 3D đã tăng gần 5,7 lần so với các năm trước đó. Sự thay đổi cho thấy ngành công nghiệp này đang trong thời kỳ phát triển. Các chuyên gia chỉ ra rằng, nó có khả năng đạt ít nhất 18 tỷ USD vào năm 2021. Đa số sự phát triển công nghệ in 3D được ứng dụng trọng điểm tại 5 quốc gia: Hoa Kỳ, Trung Quốc, Nhật Bản, Đức và Vương quốc Anh.
+						</div>
+						<div class="centering">
+							<img class="import-img" src="image/japanese 3d mask.jpg" >
+							<div class="import-img-caption">Hình 1.4: Mặt nạ người in 3D ở Nhật Bản</div>
+						</div>
+						<div class="centering">
+							<img class="import-img" src="image/ICON 3d house.jpg" >
+							<div class="import-img-caption">Hình 1.5: Ngôi nhà 60m<sup>2</sup> được in 3D tại Mỹ</div>
+						</div>
+					</div>
+					<h3 id="subsection-1-3">1.3. Một số thuật ngữ và quy tắc chung về công nghệ in 3D</h3>
+					<div class="tab-left">
+						<table class="list">
+							<tr class="bold">
+								<td>(a)</td>
+								<td>Mô hình hóa</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<div>
+										Mô hình hóa 3D là quá trình phát triển biểu diễn toán học của bất kỳ bề mặt nào của vật thể theo ba chiều thông qua phần mềm chuyên dụng. Sản phẩm được gọi là mô hình 3D. Mô hình 3D có thể được tạo ra với gói thiết kế được hỗ trợ bởi máy tính (Computer-aided design - CAD), thông qua máy in 3D hoặc cũng có thể được tạo thông qua một máy ảnh kĩ thuật số đơn giản và phần mềm trích xuất thông tin hình học từ hình ảnh. Các mô hình in 3D được tạo ra với CAD cho ra những kết quả tương đối ít lỗi hơn so với những phương pháp in khác. Các lỗi này có thể được phát hiện và và sửa lỗi trước khi thực hiện quá trình in. Bất kể phần mềm 3D nào được sử dụng, các mô hình 3D sau đó cần được lưu vào một tệp tin định dạng thiết kế được sử dụng cho chụp ảnh lập thể .stl<sup><a id="doc-2" href="#doc-2-source">[2]</a></sup> hoặc một định dạng .obj để cho phép việc in ấn.
+									</div>
+									<div class="centering">
+										<img class="import-img" src="image/autocad 3d block.jpg" >
+										<div class="import-img-caption">Hình 1.6: Khối 3D được dựng bằng AutoCAD</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="bold">
+								<td>(b)</td>
+								<td>In ấn</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<div>
+										Trước khi một mô hình 3D được in từ một tệp tin STL, trước tiên nó cần được kiểm tra những lỗi sai. Hầu hết các ứng dụng CAD đều tạo ra lỗi trong tệp STL đầu ra thuộc các loại sau:
+									</div>
+									<div class="tab-left">
+										<table class="list">
+											<tr>
+												<td>&#9679;</td>
+												<td>Lỗ và khoảng trống trên lưới mô hình</td>
+											</tr>
+											<tr>
+												<td>&#9679;</td>
+												<td>Ngược chiều in bề mặt</td>
+											</tr>
+											<tr>
+												<td>&#9679;</td>
+												<td>Sự cắt nhau và chồng chéo của các hình tam giác trên lưới mô hình</td>
+											</tr>
+											<tr>
+												<td>&#9679;</td>
+												<td>Đường viền thô xấu</td>
+											</tr>
+											<tr>
+												<td>&#9679;</td>
+												<td>Những vỏ nhiễu</td>
+											</tr>
+										</table>
+									</div>
+									<div>
+										Một bước trong STL được gọi là “sửa chữa” sẽ khắc phục những vấn đề kể trên ở mô hình ban đầu. Nhình chung, STL được tạo ra từ một mô hình thu được thông qua quét 3D thường có những lỗi này hơn. Sau khi hoàn tất, tệp STL sẽ được các phần mềm in 3D (Slic3r, Ultimaker Cura, ...) xử lý để chuyển đổi mô hình thành một loạt các lớp mỏng và tạo tệp G-code<sup><a id="doc-3" href="#doc-3-source">[3]</a></sup>. Cuối cùng máy in sẽ chạy theo các mã G-code này và in ra mô hình.
+									</div>
+								</td>
+							</tr>
+							<tr class="bold">
+								<td>(c)</td>
+								<td>Hoàn thiện</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<div>
+										Mặc dù độ phân giải do máy in tạo ra đã phù hợp với nhiều thiết bị, nhưng độ chính xác cao hơn có thể đạt được bằng cách in phiên bản to hơn của vật thể muốn in ở độ phân giải tiêu chuẩn và sau đó loại bỏ vật liệu bằng cách sử dụng qui trình loại bỏ có độ phân giải cao hơn. Một số loại polymer in được như ABS (Acrylonitrin Butadien Styren) cho ra sản phẩm có bề mặt trơn nhẵn và có thể cải thiện qua quy trình xử lý hơi hóa học bằng aceton hoặc một số dung môi khác có tính chất tương tự.
+									</div>
+									<div class="centering">
+										<img class="import-img" src="image/3d ABS lego.jpg" >
+										<div class="import-img-caption">Hình 1.7: Các mảnh xếp hình lego được in 3D bằng chất liệu ABS</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="bold">
+								<td>(d)</td>
+								<td>Vật liệu</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<div>
+										Loại vật liệu được cấp bằng sáng chế sớm nhất là loại mực nóng chảy để in các mẫu sử dụng hợp kim kim loại được nung nóng. Theo truyền thống, in 3D tập trung vào các polymer để in ấn do có thể dễ dàng sản xuất và xử lý những vật liệu polymer. Tuy nhiên, phương pháp này đã phát triển nhanh chóng để không chỉ in nhiều loại polymer khác nhau mà còn có thể in các vật liệu kim loại và gốm sứ, khiến in 3D trở thành một lựa chọn linh hoạt trong sản xuất.
+									</div>
+									<div>
+										Một yếu điểm của công nghệ hiện tại đó chỉnh là chỉ cho phép một loại vật liệu được in cùng một lúc, hạn chế nhiều ứng dụng tiềm năng đòi hỏi sự tích hợp các vật liệu khác nhau trong cùng một vật thể. In ấn 3D đa vật liệu<sup><a id="doc-4" href="#doc-4-source">[4]</a></sup> là giải pháp được mong đợi để sản xuất những vật thể có sự sắp xếp phức tạp và không đồng nhất của vật liệu bằng một máy in duy nhất. Thế nhưng, quá trình này còn đầy rẫy những trở ngại, phức tạp do các thuật toán riêng và tính nguyên khối của các loại vật liệu. Một số thiết bị thương mại đã tìm cách giải quyết những vấn đề này, chẳng hạn như xây dựng bộ dịch Spec2Fab, nhưng tiến độ vẫn còn bị hạn chế nhiều. Một số khái niệm về thuốc và vacxin in 3D đã được trình bày. Với khái niệm mới này, nhiều loại thuốc có thể được kết hợp và sẽ giúp giảm thiểu nhiều rủi ro. Với càng nhiều ứng dụng của in ấn 3D đa vật liệu, chi phí cho cuộc sống hàng ngày và sự phát triển công nghệ cao chắc chắn sẽ trở nên thấp hơn.
+									</div>
+									<div class="centering">
+										<img class="import-img" src="image/multiple material 3d printer.png" >
+										<div class="import-img-caption">Hình 1.8: Đầu in 3D đa vật liệu</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<h3 id="subsection-1-4">1.4. Một số công nghệ in 3D hiện nay</h3>
+					<div class="tab-left">
+						<table class="list">
+							<tr class="bold">
+								<td>&#9679;</td>
+								<td>Công nghệ FDM</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<div>
+										FDM là công nghệ in 3D đơn giản và có giá thành rẻ nhất, cũng là công nghệ in trong hầu hết các máy in 3D trên thị trường. Về cơ bản, máy in FDM sẽ nung nóng chảy và đùn sợi dây nhựa theo từng lớp một tạo thành mô hình.
+									</div>
+									<div class="tab-left">
+										<table class="list">
+											<tr>
+												<td>&#8211;</td>
+												<td>Ưu điểm: giá rẻ, dễ sử dụng, in được các mẫu khổng lồ</td>
+											</tr>
+											<tr>
+												<td>&#8211;</td>
+												<td>Nhược điểm: độ mịn không cao, khó in các mẫu phức tạp</td>
+											</tr>
+											<tr>
+												<td>&#8211;</td>
+												<td>Ứng dụng: rất rộng, hầu như mọi lĩnh vực đều có thể áp dụng tốt</td>
+											</tr>
+										</table>
+									</div>
+									<div class="centering">
+										<img class="import-img" src="image/3d FDM principle.png">
+										<div class="import-img-caption">Hình 1.9: Nguyên lý in 3D FDM</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="bold">
+								<td>&#9679;</td>
+								<td>Công nghệ Resin</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<div>
+										Là tên gọi chung của một loạt công nghệ in 3D dựa trên loại mực in 3D resin lỏng như SLA, DLP, CDLP, LCD, ...
+									</div>
+									<div class="tab-left">
+										<table class="list">
+											<tr>
+												<td>&#8211;</td>
+												<td>Ưu điểm: cho ra sản phẩm có độ mịn cao nhất</td>
+											</tr>
+											<tr>
+												<td>&#8211;</td>
+												<td>Nhược điểm: quy trình phức tạp, chỉ dùng để in các mẫu nhỏ, tinh xảo</td>
+											</tr>
+											<tr>
+												<td>&#8211;</td>
+												<td>Ứng dụng: đồ trang sức, nha khoa, mô hình miniature</td>
+											</tr>
+										</table>
+									</div>
+									<div class="centering">
+										<img class="import-img" src="image/3d Resin principle.jpg">
+										<div class="import-img-caption">Hình 1.10: Nguyên lý in 3D Resin</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="bold">
+								<td>&#9679;</td>
+								<td>Công nghệ SLS</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<div>
+										SLS là công nghệ in sử dụng tia laser chiếu lên các lớp bột (kim loại hoặc polymer) làm chúng nóng chảy và kết dính với nhau tạo nên hình khối vật thể.
+									</div>
+									<div class="tab-left">
+										<table class="list">
+											<tr>
+												<td>&#8211;</td>
+												<td>Ưu điểm: không ngại vật thể có hình dáng phức tạp, là công nghệ in 3D nhiều màu hiệu quả nhất</td>
+											</tr>
+											<tr>
+												<td>&#8211;</td>
+												<td>Nhược điểm: quy trình tốn kém, mẫu sau in có thể bị biến dạng, cần xử lý sau in</td>
+											</tr>
+											<tr>
+												<td>&#8211;</td>
+												<td>Ứng dụng: tạo mẫu chi tiết máy, sa bàn, tượng người</td>
+											</tr>
+										</table>
+									</div>
+									<div class="centering">
+										<img class="import-img" src="image/3d SLS principle.jpg">
+										<div class="import-img-caption">Hình 1.11: Nguyên lý in 3D SLS</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="centering">
+						<img class="import-img" src="image/compare 3d print technology.jpg" style="width: 80%; height: auto;">
+						<div class="import-img-caption">Hình 1.12: Hình mẫu so sánh chất lượng các công nghệ in</div>
+					</div>
+				</div>
+			</div>
+			<div class="hline" style="border-width: 5px;"></div>
+			<div>
+				<h1 id="section-2">2. Vai trò, ứng dụng của công nghệ in 3D trong lĩnh vực y tế</h1>
+				<div>
+					<h3 id="subsection-2-1">2.1. Công nghệ in sinh học 3D</h3>
+					<div class="tab-left" style="text-indent: 20px;">
+						<div>
+							Tương tự như in ấn 3D nhưng thay vì sử dụng những vật liệu như nhựa, kim loại để tạo thành một vật thể xác định, công nghệ in sinh học 3D<sup><a id="doc-5" href="#doc-5-source">[5]</a></sup> sử dụng một nguồn "mực sinh học" là một dung dịch chứa các tế bào gốc để in thành các cơ quan trong cơ thể người.
+						</div>
+						<div>
+							Khi "in", các tế bào gốc được phân bố bằng các van kiểm soát bằng vi tính để hình thành vật muốn in. Quá trình in được theo dõi bằng kính hiển vi và phải đạt điều kiện vô trùng tuyệt đối.
+						</div>
+					</div>
+					<h3 id="subsection-2-2">2.2. Vai trò trong y sinh</h3>
+					<div class="tab-left" style="text-indent: 20px;">
+						<div>
+							Trong y sinh, công nghệ in 3D mang đến một cuộc cách mạng trong việc tạo ra các cơ quan, bào chế thuốc, sản xuất thiết bị y khoa. Việc áp dụng in 3D vào y học sẽ xoá đi mối lo ngại về vấn đề giá thành chăm sóc sức khoẻ ngày càng tăng cũng như được kỳ vọng sẽ đảm bảo chuỗi cung ứng trong tình hình thiếu hụt hiện nay.
+						</div>
+						<div>
+							Trên thực tế, in ấn 3D đã được sử dụng trong phẫu thuật lồng ngực, tim mạch, tiêu hóa, phẩu thuật thần kinh, răng hàm mặt, nhãn khoa, tai mũi họng, phẫu thuật chỉnh hình, phẩu thuật thẩm mỹ và rất nhiều lĩnh vực cơ sở khác đã đang và sẽ ứng dụng công nghệ in 3D để thực hiện.
+						</div>
+						<div>
+							Ví dụ, các chuyên gia đã phát triển da được in 3D cho các bệnh bỏng và tấm nẹp đường thở cho trẻ sơ sinh bị tràn dịch màng phổi. Tấm nẹp đường thở là đặc biệt có ý nghĩa vì chúng là chi tiết 3D đầu tiên được tạo ra để cấy ghép và được thiết kế để phát triển cùng với bệnh nhân. Việc cấy ghép đã được thử nghiệm thành công trên ba trẻ em ở giai đoạn từ 3 đến 16 tháng tuổi vào tháng 4 năm 2015. Tấm nẹp có thể được sản xuất trong 1 giờ và chũng chỉ có giá khoảng 10 đô la cho mỗi đơn vị.
+						</div>
+						<div class="centering">
+							<img class="import-img" src="image/3d airway splint.jpg" >
+							<div class="import-img-caption">Hình 2.1: Tấm nẹp đường thở được in 3D</div>
+						</div>
+					</div>
+					<h3 id="subsection-2-3">2.3. Ứng dụng trong lĩnh vực y tế và chăm sóc sức khỏe</h3>
+					<div class="tab-left">
+						<table class="list">
+							<tr class="bold">
+								<td>&#9679;</td>
+								<td>In tế bào gốc</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<div>
+										Tế bào gốc có những tính năng rất kỳ diệu, chúng có thể hình thành nhiều loại mô của cơ thể con người. Giới nghiên cứu đã chế tạo thành công máy in sinh học 3D in ra tế bào gốc của phôi thai người. Loại tế bào này (hESCs) được trích ra từ phôi thai người, nó phát triển thành nhiều loại tế bào khác như mô não cho đến cơ bắp hay xương của con người. Tính năng kỳ diệu này của tế bào gốc sẽ giúp cho việc sửa chữa, thay thế hay tái tạo các tế bào, mô hay cơ quan của cơ thể bị tổn hại.
+									</div>
+									<div>
+										Tế bào gốc có những tính năng rất kỳ diệu, chúng có thể hình thành nhiều loại mô của cơ thể con người. Giới nghiên cứu đã chế tạo thành công máy in sinh học 3D in ra tế bào gốc của phôi thai người. Loại tế bào này (hESCs) được trích ra từ phôi thai người, nó phát triển thành nhiều loại tế bào khác như mô não cho đến cơ bắp hay xương của con người. Tính năng kỳ diệu này của tế bào gốc sẽ giúp cho việc sửa chữa, thay thế hay tái tạo các tế bào, mô hay cơ quan của cơ thể bị tổn hại.
+									</div>
+								</td>
+							</tr>
+							<tr class="bold">
+								<td>&#9679;</td>
+								<td>Nội tạng</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<div>
+										Hiện tại công nghệ in sinh học 3D chưa thể "in" ra trọn vẹn một cơ quan có thể cấy ghép cho người do những hạn chế về mặt y học cũng như công nghệ. Nhưng các nhà nghiên cứu đã thành công trong việc in được các tế bào thận, những tấm mô tim có thể đập như tim thật, cũng như một số mô của các cơ quan khác. Các nhà nghiên cứu ở Đại học Rostock (Đức) cũng in được các mạch máu nhân tạo. Đại học Sydney (Úc) và Viện y khoa Harvard (Mỹ) thì đang phát triển phương pháp in những miếng vá tim để điều trị tim bị hư tổn. Họ đã ghép thành công miếng vá này trên loài chuột, cũng như sản xuất được các mô tim có các thuộc tính cơ sinh học như tim người thật.
+									</div>
+									<div>
+										Hiện nay, bệnh nhân cần thay thế nội tạng phải chờ đợi rất lâu vì nguồn hiến tặng từ người khác không nhiều. Chưa kể khi có nguồn thì chưa chắc đã phù hợp với người nhận. Và dù cấy ghép thành công, bênh nhân buộc phải dùng thuốc ức chế miễn dịch trong suốt phần đời còn lại để chống hệ miễn dịch cơ thể đào thải bộ phận cấy ghép. Các mô sinh học in bằng công nghệ 3D để thay thế những cơ quan bị tổn thương sẽ mang lại một giải pháp mới cho những bệnh nhân phải cấy ghép nội tạng, giải quyết được vấn đề tương thích sinh học và nguy cơ bị đào thải của bộ phận cấy ghép.
+									</div>
+								</td>
+							</tr>
+							<tr class="bold">
+								<td>&#9679;</td>
+								<td>Thay khớp, ghép xương</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<div>
+										Trong những năm gần đây, nhờ sự ra đời và phát triển của công nghệ sử dụng vật liệu PEEK trong tạo hình xương nhân tạo, một hướng đi mới đã được mở ra để điều trị triệt để những bệnh nhân có bệnh lý u xương phức tạp. Tháng 11/2019, lần đầu tiên tại Việt Nam, bác sĩ tại Bệnh viện đa khoa Xanh Pôn, Hà Nội, đã thực hiện thành công hai ca ghép xương đùi bằng vật liệu PEEK in 3D dài gần 20 cm thay thế cho đầu trên xương đùi của hai nam bệnh nhân đã bị biến dạng bởi u xương.
+									</div>
+									<div>
+										Gần đây, các bác sĩ tại Việt Nam tiếp tục thực hiện thành công việc ứng dụng công nghệ in 3D để chế tạo phần xương nhân tạo bằng vật liệu Titan. Nhờ có in 3D, xương nhân tạo có tạo hình chính xác tuyệt đối với cấu trúc của đoạn xương bị khuyết, phần xương được cấy ghép liên kết chặt chẽ, đảm bảo kỹ thuật phẫu thuật, khả năng chịu lực. Sau cuộc phẫu thuật thay toàn bộ khớp gối và một phần xương đùi bằng kim loại titan, bệnh nhân có thể mau chóng lành bệnh, và tự đi lại trên đôi chân của mình mà không cần có dụng cụ hỗ trợ.
+									</div>
+									<div class="centering">
+										<img class="import-img" src="image/3d bone.jpg" >
+										<div class="import-img-caption">Hình 2.2: Bác sĩ sử dụng đoạn xương nhân tạo sau quy trình sao chụp và tạo hình giống xương thật</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="bold">
+								<td>&#9679;</td>
+								<td>Van thở</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<div>
+										Ứng dụng tiêu biểu gần đây của công nghệ 3D trong y sinh là chế tạo van thở Venturi để hỗ trợ cứu sống bệnh nhân nhiễm Covid-19. Khi Cristian Fracassi, người sáng lập Issanova, một công ty khởi nghiệp công nghệ in 3D với đội ngũ 14 nhân viên, biết được một bệnh viện địa phương đang thiếu các thiết bị thở quan trọng để giúp người nhiễm Covid-19, anh đã quyết định hành động. Vì nhà cung cấp van thở của bệnh viện không phát hành bản thiết kế kỹ thuật của thiết bị, nên Cristian Fracassi đã phải tham khảo kỹ sư đồng nghiệp Alessandro Romaioli. Cả hai đã kiểm tra các van thở và thiết kế ngược chỉ trong vài giờ. Dù chi phí sản xuất các van này không tốn kém, chỉ khoảng 1 USD/chiếc, nhưng phải mất khoảng một giờ mới hoàn thành được một van. Isinnova chỉ có sáu máy in 3D, cho nên Cristian Fracassi đã liên hệ với các công ty đồng nghiệp để tham gia hỗ trợ.
+									</div>
+									<div class="centering">
+										<img class="import-img" src="image/3d Venturi breathing valve.jpg" >
+										<div class="import-img-caption">Hình 2.3: Van thở Venturi được in 3D</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="bold">
+								<td>&#9679;</td>
+								<td>Mặt nạ thở có ống cấp khí kết nối với màng lọc khuẩn</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<div>
+										Vào tháng 4 năm 2020, nhóm nghiên cứu của Trung tâm Nghiên cứu vật liệu Polymer, Khoa công nghệ vật liệu Trường ĐH Bách khoa (ĐH Quốc gia TP.HCM) phối hợp với bác sĩ Nguyễn Thiên Bình - trưởng khoa hồi sức cấp cứu - Bệnh viện Trưng Vương (TP.HCM) vừa nghiên cứu, thiết kế, chế tạo thành công thiết bị y tế kết nối mặt nạ thở bằng công nghệ in 3D.
+									</div>
+									<div>
+										Đối với bệnh nhân COVID-19, ngoài việc phải đeo khẩu trang, khi bệnh trở nặng thì cần phải thở bằng máy không xâm lấn. Tuy nhiên, các phương pháp này vẫn còn tiềm ẩn nguy cơ khi thực hiện các thủ thuật điều trị như thủ thuật trên đường thở khi hít phải giọt bắn, hạt khí dung. Từ đó, nguy cơ lây nhiễm cho nhân viên y tế khi làm việc nhiều giờ liên tiếp trong môi trường không có phòng áp lực âm. Do vậy nhóm nghiên cứu đã nghĩ đến việc chế tạo bộ phân dẫn khí mặt nạ thở khắc phục tình trạng trên.
+									</div>
+									<div class="centering">
+										<img class="import-img" src="image/3d mask.jpg" >
+										<div class="import-img-caption">Hình 2.4: Mặt nạ thở với ống cấp khí kết nối với màng lọc khuẩn do giảng viên Trường ĐH Bách Khoa chế tạo</div>
+									</div>
+									<div class="centering">
+										<img class="import-img" src="image/3d mask2.jpg" >
+										<div class="import-img-caption">Hình 2.5: Bộ phận dẫn khí của nhóm nghiên cứu đã được sử dụng tại Bệnh viện Trưng Vương</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="hline" style="border-width: 5px;"></div>
+			<div>
+				<h1 id="summary">Nhận xét và kết luận</h1>
+				<table class="list">
+					<tr>
+						<td>&#9679;</td>
+						<td>
+							Công nghệ in 3D không phải là một công nghệ mới, nó đã được đề xuất từ những năm 1980 nhưng gần đây, nó được biết đến rộng rãi và trở thành một loại hình sản xuất ra nhiều loại vật liệu khác nhau phục vụ cho đa dạng các lĩnh vực công nghiệp, y học và đời sống trong thời điểm hiện nay.
+						</td>
+					</tr>
+					<tr>
+						<td>&#9679;</td>
+						<td>
+							Nhớ vào công nghệ in 3D, quá trình sản xuất sản phẩm trên nhiều lĩnh vực sẽ được thực hiện với chi phí thấp hơn và độ chuẩn xác cao hơn so với những hình thức sản xuất truyền thống, dự báo sẽ mang đến một thời kì công nghệ cao, hiện đại và tiện nghi hơn cho đời sống của con người.
+						</td>
+					</tr>
+					<tr>
+						<td>&#9679;</td>
+						<td>
+							Có thể nói rằng, công nghệ in 3D không hề có giới hạn, bạn có thể in bất kỳ đồ vật, chi tiết, vật thể nào mà bạn có thể nghĩ ra. Có lẽ giới hạn duy nhất chính là tưởng tượng của con người. Điều này chứng mình một điều rằng, in 3D sẽ là tương lai của thế giới khi tất cả những gì phục vụ cho đời sống của con người sẽ gắn liền với 4 chữ "công nghệ in 3D".
+						</td>
+					</tr>
+					<tr>
+						<td>&#9679;</td>
+						<td>
+							Trong lĩnh vực y học, ứng dụng tiềm năng nhất đối với công nghệ in 3D trong thế giới y học là “in sinh học” (bioprinting) – sản xuất các bộ phận trên cơ thể người để cấy ghép. Công nghệ này liên quan đến việc tạo ra các mô và cơ quan nội tạng được in từng lớp vào một cấu trúc 3 chiều. Các bộ phận được chế tạo từ chính vật chất di truyền của bệnh nhân và tương thích chính xác với mô và bộ phận muốn thay thế. Nhờ vào tính ưu việt của công nghệ in ấn 3D, những bộ phận như da, khí quản, bàng quang và cả những bộ phận có cấu trúc phức tạp hơn như tim đang chờ được in để điều trị cho các bệnh nhân.
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="hline" style="border-width: 5px;"></div>
+			<div>
+				<h1 id="refer">Tham khảo</h1>
+				<table class="list">
+					<tr>
+						<td>&#9679;</td>
+						<td>
+							<a class="italic" href="https://en.wikipedia.org/wiki/3D_printing">https://en.wikipedia.org/wiki/3D_printing</a>
+						</td>
+					</tr>
+					<tr>
+						<td>&#9679;</td>
+						<td>
+							<a class="italic" href="https://wohlersassociates.com/2017report.htm">https://wohlersassociates.com/2017report.htm</a>
+						</td>
+					</tr>
+					<tr>
+						<td>&#9679;</td>
+						<td>
+							<a class="italic" href="https://www.creality3dofficial.com/blogs/news/tagged/resin-3d-printer">https://www.creality3dofficial.com/blogs/news/tagged/resin-3d-printer</a>
+						</td>
+					</tr>
+					<tr>
+						<td>&#9679;</td>
+						<td>
+							<a class="italic" href="https://tuoitre.vn/mat-na-nguoi-3d-that-den-ron-nguoi-gia-950-usd-o-nhat-20201217153626158.htm">https://tuoitre.vn/mat-na-nguoi-3d-that-den-ron-nguoi-gia-950-usd-o-nhat-20201217153626158.htm</a>
+						</td>
+					</tr>
+					<tr>
+						<td>&#9679;</td>
+						<td>
+							<a class="italic" href="https://zingnews.vn/ngoi-nha-60-met-vuong-in-3d-gia-4000-usd-o-my-re-hon-xay-post825614.html">https://zingnews.vn/ngoi-nha-60-met-vuong-in-3d-gia-4000-usd-o-my-re-hon-xay-post825614.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td>&#9679;</td>
+						<td>
+							<a class="italic" href="https://www.nature.com/articles/d41586-019-03408-4">https://www.nature.com/articles/d41586-019-03408-4</a>
+						</td>
+					</tr>
+					<tr>
+						<td>&#9679;</td>
+						<td>
+							<a class="italic" href="https://tuoitre.vn/in-3d-dang-tao-ra-phep-mau-trong-y-hoc-20171019155309969.htm">https://tuoitre.vn/in-3d-dang-tao-ra-phep-mau-trong-y-hoc-20171019155309969.htm</a>
+						</td>
+					</tr>
+					<tr>
+						<td>&#9679;</td>
+						<td>
+							<a class="italic" href="https://medicine.umich.edu/dept/otolaryngology/3d-airway-printed-splint">https://medicine.umich.edu/dept/otolaryngology/3d-airway-printed-splint</a>
+						</td>
+					</tr>
+					<tr>
+						<td>&#9679;</td>
+						<td>
+							<a class="italic" href="https://vnexpress.net/tao-xuong-nguoi-tu-te-bao-goc-va-cong-nghe-in-3d-3273055.html">https://vnexpress.net/tao-xuong-nguoi-tu-te-bao-goc-va-cong-nghe-in-3d-3273055.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td>&#9679;</td>
+						<td>
+							<a class="italic" href="https://vnexpress.net/ghep-xuong-nhan-tao-in-3d-cho-benh-nhan-ung-thu-4216665.html">https://vnexpress.net/ghep-xuong-nhan-tao-in-3d-cho-benh-nhan-ung-thu-4216665.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td>&#9679;</td>
+						<td>
+							<a class="italic" href="https://vnexpress.net/van-tho-in-3d-cuu-song-benh-nhan-covid-19-4070938.html">https://vnexpress.net/van-tho-in-3d-cuu-song-benh-nhan-covid-19-4070938.html</a>
+						</td>
+					</tr>
+					<tr>
+						<td>&#9679;</td>
+						<td>
+							<a class="italic" href="https://tuoitre.vn/gv-bach-khoa-che-tao-bo-phan-dan-khi-ho-tro-dieu-tri-covid-19-20200427101747045.htm">https://tuoitre.vn/gv-bach-khoa-che-tao-bo-phan-dan-khi-ho-tro-dieu-tri-covid-19-20200427101747045.htm</a>
+						</td>
+					</tr>
+				</table>
+				<h1 id="document">Tài liệu</h1>
+				<table class="list">
+					<tr>
+						<td id="doc-1-source"><a href="#doc-1">[1]</a></td>
+						<td>
+							“Rapid prototyping.” <a class="italic" href="https://en.wikipedia.org/wiki/Rapid_prototyping">https://en.wikipedia.org/wiki/Rapid_prototyping</a>
+						</td>
+					</tr>
+					<tr>
+						<td id="doc-2-source"><a href="#doc-2">[2]</a></td>
+						<td>
+							“Stl (file format).” <a class="italic" href="https://en.wikipedia.org/wiki/STL_(file_format)">https://en.wikipedia.org/wiki/STL_(file_format)</a>
+						</td>
+					</tr>
+					<tr>
+						<td id="doc-3-source"><a href="#doc-3">[3]</a></td>
+						<td>
+							“G-code.” <a class="italic" href="https://en.wikipedia.org/wiki/G-code">https://en.wikipedia.org/wiki/G-code</a>
+						</td>
+					</tr>
+					<tr>
+						<td id="doc-4-source"><a href="#doc-4">[4]</a></td>
+						<td>
+							“Multi-material 3d printing.” <a class="italic" href="https://en.wikipedia.org/wiki/Multi-material_3D_printing">https://en.wikipedia.org/wiki/Multi-material_3D_printing</a>
+						</td>
+					</tr>
+					<tr>
+						<td id="doc-5-source"><a href="#doc-5">[5]</a></td>
+						<td>
+							“3d bioprinting.” <a class="italic" href="https://en.wikipedia.org/wiki/3D_bioprinting">https://en.wikipedia.org/wiki/3D_bioprinting</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script src="./javascript/index.js"></script>
+</body>
+</html>
